@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Favicon.png" type="image/x-icon">
+    <title>Translation App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="translateApp">
+            <div class="languageOptions">
+                <h1>Translation App</h1>
+                <label for="baseLanguage" class="label">Initial Language:</label>
+                <select id="baseLanguage">
+                    <option value="">Select an Option</option>
+                    <!-- <option value="urdu">Urdu</option>
+                    <option value="french">French</option> -->
+                </select>
+                <label for="translatedLanguage" class="label">Translation Language:</label>
+                <select id="translatedLanguage">
+                    <option value="">Select an Option</option>
+                </select>
+            </div>
+            <div class="translateBox">
+                <div id="baseText1"><textarea id="baseText" cols="30" rows="10" maxlength="50"
+                        placeholder="Type What you want to Translate"></textarea></div>
+                <div id="translateText">Translated Text will Appear Here</div>
+            </div>
+            <button id="submitBtn">Translate</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

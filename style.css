@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://th.bing.com/th/id/R.0d9b24189f42fb3f2563ef854b41ab0f?rik=z6L2CU0TvipUjQ&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2011%2f05%2ftriangle-graphic-design_323154.png&ehk=ws9XgX4M16GCj8Qfg6V20OL9ZfKldNlsyk5Yliru7uo%3d&risl=&pid=ImgRaw&r=0);
+
+}
+
+.translateApp {
+    max-width: 500px;
+    padding: 20px;
+    background-color: #3a90cd;
+    border-radius: 8px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.languageOptions {
+    margin-bottom: 15px;
+}
+
+#baseLanguage,
+#translatedLanguage {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 23px;
+}
+
+.translateBox {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    /* Added */
+}
+
+#baseText1,
+#translateText {
+    flex: 1;
+    /* Added */
+}
+
+#baseText1 textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ffffff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    resize: none;
+    height: 150px;
+}
+
+#baseText1 textarea::after {
+    content: attr(maxlength);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 12px;
+    color: #999;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+#translateText {
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    min-height: 100px;
+    background-color: #fff;
+    overflow-wrap: break-word;
+    /* white-space: nowrap; */
+    animation: typing 2s steps(40, end);
+    height: 150px;
+}
+
+
+button {
+    padding: 10px 20px;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    font-size: 16px;
+    background-color: #274da0a5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #274da0;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
